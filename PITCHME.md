@@ -12,7 +12,7 @@
 
 <br>
 
-@fa[file-code](code)
+@fa[file-code code](code)
 
 ---
 # Motivation
