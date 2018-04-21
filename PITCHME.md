@@ -12,7 +12,7 @@
 
 <br>
 
-@fa[file-code gp-tip](code)
+@fa[thumbs-up](Looks good to me!)
 
 ---
 # Motivation
