@@ -12,7 +12,7 @@
 
 <br>
 
-@fa[twitter gp-contact](@gitpitch)
+@fa[file-code](code)
 
 ---
 # Motivation
