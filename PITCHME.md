@@ -12,7 +12,7 @@
 
 <br>
 
-@fa[file-code code](code)
+@fa[file-code gp-tip](code)
 
 ---
 # Motivation
