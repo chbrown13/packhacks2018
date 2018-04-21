@@ -1,5 +1,5 @@
 # PackHacks 2018
-#### NC State University
+#### <span class="red">NC State University</span>
 <span class="byline">Chris Brown</span>
 
 ---
