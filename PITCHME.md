@@ -1,10 +1,16 @@
 # PackHacks 2018
-#### <span class="red">NC State University</span>
+#### NC State University
 <span class="byline">Chris Brown</span>
 
 ---
 # Problem
 
+:computer:
+
++++
+## More Stuff
+
+@fa[file-code]
 ---
 # Motivation
 
