@@ -10,7 +10,10 @@
 +++
 ## More Stuff
 
-@fa[file-code]
+<br>
+
+@fa[twitter gp-contact](@gitpitch)
+
 ---
 # Motivation
 
