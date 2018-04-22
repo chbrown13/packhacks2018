@@ -70,23 +70,23 @@ class ImageText(object):
                        justify_last_line=False):
         lines = []
         line = []
-        words = []
-        sentences = text.split("\n")
-        sents = [s.split(" ") for s in sentences]
-        for sent in sents:
-            words = words + sent + ["\n"]
-        words = words[:-1]
+        # words = []
+        # sentences = text.split("\n")
+        # sents = [s.split(" ") for s in sentences]
+        # for sent in sents:
+        #     words = words + sent + ["\n"]
+        # words = words[:-1]
+        words = text.split()
         for word in words:
-            if word == '' and line:
-                word = ' '
             new_line = ' '.join(line + [word])
             size = self.get_text_size(font_filename, font_size, new_line)
             text_height = size[1]
-            if size[0] <= box_width and word != "\n":
+            if size[0] <= box_width:
                 line.append(word)
-            elif word == "\n":
-                lines.append(line)
-                line = []
+            # elif word == "\n":
+                # lines.append(line)
+                # line = []
+            #    continue
             else:
                 lines.append(line)
                 line = [word]
