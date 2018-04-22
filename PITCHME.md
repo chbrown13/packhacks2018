@@ -22,7 +22,8 @@ http://www.tricentis.com/software-fail-watch
 # Problem
 
 #### Researchers found that __tool output__ is one of the main reasons software engineers don't use static analysis tools.
-
+<br>
+<br>
 Brittany Johnson, NC State. *Why Don't Software Developers Use Static Analysis Tools to Find Bugs*. https://people.engr.ncsu.edu/ermurph3/papers/icse13b.pdf
  
 ---
@@ -45,7 +46,7 @@ Brittany Johnson, NC State. *Why Don't Software Developers Use Static Analysis T
 
 # PackHacks Project
 
-* Analyze code with the static analysis tool [http://errorprone.info/](Error Prone)
+* Analyze code with the static analysis tool (http://errorprone.info/)[Error Prone]
 * Parse the output to collect errors found by the tool
 * Randomly generate memes to present errors to developers
 * Generate an html file with errors, memes, and links to reported bugs
@@ -54,8 +55,14 @@ Brittany Johnson, NC State. *Why Don't Software Developers Use Static Analysis T
 
 # PackHacks Project
 
-##### Examples (if demo doesn't work)
+##### Examples (in case demo doesn't work)
+
++++
+
 ![img](examples/drake_collection_incompatible_type.png)
+
++++
+
 ![img](examples/math_missing_override.png)
 ---
 
