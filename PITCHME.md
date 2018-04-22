@@ -46,7 +46,7 @@ Brittany Johnson, NC State. *Why Don't Software Developers Use Static Analysis T
 
 # PackHacks Project
 
-* Analyze code with the static analysis tool [Error Prone](http://errorprone.info/)
+* Analyze code with [Error Prone](http://errorprone.info/) static analysis tool
 * Parse output to collect errors found by the tool
 * Randomly generate memes to present errors to developers
 * Generate html file with errors, memes, and links to reported bugs
