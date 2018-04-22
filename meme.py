@@ -3,15 +3,19 @@ import os
 import random
 
 DIR = "images/"
-COLOR = (255, 255, 255)
 FONT = 'impact.ttf'
 MEMES = {
-    "crying_jordan": {'top': (0, 0), 'bottom': (0, 475), 'extra': "   )`:"},
-    "aliens": {'top': (0, 0), 'bottom': (0, 360), 'extra': "???????"},
-    "phelps": {'top': (0, 0), 'bottom': (0, 375), 'extra': ""},
-    "boondocks": {'top': (0, 0), 'bottom': (0, 429), 'extra': "..."},
-    "woman": {'top': (0, 0), 'bottom': (0, 625), 'extra': ""},
-    "math_woman": {'top': (0, 0), 'bottom': (0, 650), 'extra': ""},
+    "crying_jordan": {'top': (0, 0), 'bottom': (0, 475), 'error': "{err}     )`:", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'}, 
+    "aliens": {'top': (0, 0), 'bottom': (0, 360), 'error': "{err}???????", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
+    "phelps": {'top': (0, 0), 'bottom': (0, 375), 'error': "{err}", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
+    "boondocks": {'top': (0, 0), 'bottom': (0, 429), 'error': "[{err}]...", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
+    "woman": {'top': (0, 0), 'bottom': (0, 625), 'error': "{err}", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
+    "math_woman": {'top': (0, 0), 'bottom': (0, 650), 'error': "{err}???", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
+    "morpheus": {'top': (0, 0), 'bottom': (0, 180), 'error': "What if I told you", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
+    "think": {'top': (0, 0), 'bottom': (0, 300), 'error': "{err}...", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
+    "rock": {'top': (0, 150), 'bottom': (0, 350), 'error': "{err}?", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
+    "drake": {'top': (300, 0), 'bottom': (400, 500), 'error': "{err}?", 'color': (20, 20, 20), 'width': 2, 'top_place': 'center', 'bottom_place': 'center'},
+    "disaster_girl": {'top': (0, 50), 'bottom': (10, 200), 'error': "{err}?", 'color': (255, 255, 255), 'width': 1.5, 'top_place': 'left', 'bottom_place': 'center'},
 }
 
 def parse(text):
@@ -31,10 +35,10 @@ def memify(path, error, message):
     meme = MEMES[name]
     print meme
     msg = parse(message)
-    img.write_text_box(meme['top'], error + meme['extra'], box_width=img.size[0], font_filename=FONT,
-                   font_size=f_size, color=COLOR, place='center')
-    img.write_text_box(meme['bottom'], msg, box_width=img.size[0], font_filename=FONT,
-                   font_size=f_size, color=COLOR, place='center')
+    img.write_text_box(meme['top'], meme['error'].replace("{err}", error), box_width=img.size[0]/meme['width'], font_filename=FONT,
+                   font_size=f_size, color=meme['color'], place=meme['top_place'])
+    img.write_text_box(meme['bottom'], msg, box_width=img.size[0]/meme['width'], font_filename=FONT,
+                   font_size=f_size, color=meme['color'], place=meme['bottom_place'])
 
     pic = path.replace(".java", ".png")
     img.save(pic)
