@@ -1,5 +1,7 @@
+import analysis
+
 def main():
-    print 'Hello World'
+    analysis.run()
 
 if __name__ == "__main__":
     main()
