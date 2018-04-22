@@ -6,7 +6,7 @@ DIR = "images/"
 FONT = 'impact.ttf'
 MEMES = {
     "crying_jordan": {'top': (0, 0), 'bottom': (0, 475), 'error': "{err}     )`:", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'}, 
-    "aliens": {'top': (0, 0), 'bottom': (0, 360), 'error': "{err}???????", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
+    "aliens": {'top': (0, 0), 'bottom': (0, 325), 'error': "{err}???????", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
     "phelps": {'top': (0, 0), 'bottom': (0, 375), 'error': "{err}", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
     "boondocks": {'top': (0, 0), 'bottom': (0, 429), 'error': "[{err}]...", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},
     "woman": {'top': (0, 0), 'bottom': (0, 625), 'error': "{err}", 'color': (255, 255, 255), 'width': 1, 'top_place': 'center', 'bottom_place': 'center'},

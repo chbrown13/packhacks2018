@@ -31,6 +31,8 @@ def parse(log):
                 msg += line
     if error != "":
         errors.append((path, num, error, msg, link))
+    if len(errors) == 0:
+        return "<img src=\"success.jpg\"><br>"
     for e in errors:
         body += "<h3>"+ e[0].replace(DIR+"/", "") + "- line #" + e[1] + "</h3><br>"
         body += "<img src=\"" + meme.memify(e[0], error, msg) + "\"><br>"
@@ -38,12 +40,9 @@ def parse(log):
         body += e[4].replace(url, "<a href=\""+url+"\">"+url + "</a>") + "<br><br><br>"
     return body
 
-def pycodestyle(files):
-    # TODO: Implement this
-    return None
-    
 def run(gitDir):
     with open('output.txt', 'r') as f:
         log = f.readlines()
     results = parse(log)
+    # TODO: Implement other tools
     output.generate_file('Error Prone', results)
