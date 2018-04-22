@@ -5,11 +5,14 @@
 ---
 # Problem
 
-### In 2017, software errors:
+###$ In 2017, software errors:
 * impacted 3.7 billion users
 * cost over $1.7 trillion 
+<br>
+<br>
+<br>
 
-###### http://www.tricentis.com/software-fail-watch
+http://www.tricentis.com/software-fail-watch
 
 +++
 # Problem
@@ -18,21 +21,35 @@
 +++
 # Problem
 
-### Researchers interviewed developers and found that __tool output__ is one of the primary reasons software engineers do not use static analysis tools.
+### Researchers found that __tool output__ is one of the primary reasons software engineers do not use static analysis tools.
 
-<span class="byline">Brittany Johnson, *Why Don't Software Developers Use Static Analysis Tools to Find Bugs*</span>
+<span class="byline">Brittany Johnson, *Why Don't Software Developers Use Static Analysis Tools to Find Bugs*.</span>
 
-###### https://people.engr.ncsu.edu/ermurph3/papers/icse13b.pdf
+https://people.engr.ncsu.edu/ermurph3/papers/icse13b.pdf
  
 ---
 
 # Solution
 
-## What if there was a way to improve the output of static analysis tools for developers?
+## What if I told you there was a way to improve static analysis tool output for developers?
+
+![img](images/morpheus.jpg)
+
++++
+
+# Solution
+
+## My project introduces a tool that
 
 @fa[thumbs-up]()
 
 ---
 
 # Thanks!
+
+Chris Brown
+NC State University
+dcbrow10@ncsu.edu
+www4.ncsu.edu/~dcbrow10
+@fa[github](chbrown13)
 
