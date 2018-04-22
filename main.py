@@ -5,7 +5,6 @@ import sys
 def main():
     user = sys.argv[1]
     repo = sys.argv[2]
-    # print "https://github.com/{user}/{repo}".replace("{user}", user).replace("{repo}", repo)
     try:
         Repo.clone_from("https://github.com/{user}/{repo}".replace('{user}', user).replace('{repo}', repo), repo)
     except GitCommandError:

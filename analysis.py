@@ -46,4 +46,4 @@ def run(gitDir):
     with open('output.txt', 'r') as f:
         log = f.readlines()
     results = parse(log)
-    output.generate_file(gitDir, 'Error Prone', results)
+    output.generate_file('Error Prone', results)

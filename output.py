@@ -10,7 +10,7 @@ HTML = """
 </html> 
 """
 
-def generate_file(dir, tool, body):
+def generate_file(tool, body):
     results = HTML.replace('{tool}', tool.upper()).replace('{body}', body)
     with open('{dir}/output.html'.replace('{dir}', dir), 'w') as out:
         out.write(results)
