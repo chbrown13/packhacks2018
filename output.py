@@ -12,5 +12,5 @@ HTML = """
 
 def generate_file(tool, body):
     results = HTML.replace('{tool}', tool.upper()).replace('{body}', body)
-    with open('{dir}/output.html'.replace('{dir}', dir), 'w') as out:
+    with open('output.html', 'w') as out:
         out.write(results)
