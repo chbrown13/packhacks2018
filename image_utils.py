@@ -72,11 +72,13 @@ class ImageText(object):
         line = []
         words = []
         sentences = text.split("\n")
-        sents = [s.split() for s in sentences]
+        sents = [s.split(" ") for s in sentences]
         for sent in sents:
             words = words + sent + ["\n"]
         words = words[:-1]
         for word in words:
+            if word == '' and line:
+                word = ' '
             new_line = ' '.join(line + [word])
             size = self.get_text_size(font_filename, font_size, new_line)
             text_height = size[1]
