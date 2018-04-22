@@ -47,9 +47,10 @@ https://people.engr.ncsu.edu/ermurph3/papers/icse13b.pdf
 
 # Thanks!
 
-Chris Brown
-NC State University
-dcbrow10@ncsu.edu
-www4.ncsu.edu/~dcbrow10
-@fa[github](chbrown13)
+Chris Brown<br>
+NC State University<br>
+@fa[envelope]dcbrow10@ncsu.edu<br>
+@fa[github](chbrown13)<br>
+@fa[code]www4.ncsu.edu/~dcbrow10<br>
+
 
