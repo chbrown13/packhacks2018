@@ -39,18 +39,26 @@ https://people.engr.ncsu.edu/ermurph3/papers/icse13b.pdf
 
 # Solution
 
-## Memes
+## Memes!
 
-@fa[thumbs-up]()
+![img](images/think.jpg)
 
+---
+
+# PackHacks Project
+
+* Analyze code with the static analysis tool [http://errorprone.info/](Error Prone)
+* Parse the output to collect errors found by the tool
+* Randomly generate memes to present errors to developers
+* Generate an html file with errors, memes, and links to reported bugs
 ---
 
 # Thanks!
 
-Chris Brown<br>
-NC State University<br>
-@fa[envelope]dcbrow10@ncsu.edu<br>
-@fa[github](chbrown13)<br>
-@fa[code]www4.ncsu.edu/~dcbrow10<br>
+* @fa[user](Chris Brown)
+* @fa[graduation-cap](NC State University)
+* @fa[envelope](dcbrow10@ncsu.edu)
+* @fa[github](chbrown13)
+* @fa[code](www4.ncsu.edu/~dcbrow10)
 
 
