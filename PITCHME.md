@@ -59,7 +59,7 @@ Brittany Johnson, NC State. *Why Don't Software Developers Use Static Analysis T
 
 +++
 
-![img](examples/drake_collection_incompatible_type.png)
+![img](examples/jordan_collection_incompatible_type.png)
 
 +++
 
@@ -67,7 +67,7 @@ Brittany Johnson, NC State. *Why Don't Software Developers Use Static Analysis T
 
 +++
 
-![img](examples/phelps_jdkobsolete.png)
+![img](examples/time_immutable_enum_checker.png)
 
 ---
 
