@@ -34,7 +34,7 @@ def parse(log):
     if len(errors) == 0:
         return "<img src=\"success.jpg\"><br>"
     for e in errors:
-        body += "<h3>"+ e[0].replace(DIR+"/", "") + "- line #" + e[1] + "</h3><br>"
+        body += "<h3>"+ e[0].replace(DIR+"/", "") + "- line #" + e[1] + "</h3>"
         body += "<img src=\"" + meme.memify(e[0], error, msg) + "\"><br>"
         url = e[4][e[4].index("http"):e[4].index(")")]
         body += e[4].replace(url, "<a href=\""+url+"\">"+url + "</a>") + "<br><br><br>"

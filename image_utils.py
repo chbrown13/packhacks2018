@@ -58,6 +58,11 @@ class ImageText(object):
             x = (self.size[0] - text_size[0]) / 2
         if y == 'center':
             y = (self.size[1] - text_size[1]) / 2
+        self.draw.text((x-1, y), text, font=font, fill=(0,0,0))
+        self.draw.text((x+1, y), text, font=font, fill=(0,0,0))
+        self.draw.text((x, y-1), text, font=font, fill=(0,0,0))
+        self.draw.text((x, y+1), text, font=font, fill=(0,0,0))
+
         self.draw.text((x, y), text, font=font, fill=color)
         return text_size
 
@@ -70,12 +75,6 @@ class ImageText(object):
                        justify_last_line=False):
         lines = []
         line = []
-        # words = []
-        # sentences = text.split("\n")
-        # sents = [s.split(" ") for s in sentences]
-        # for sent in sents:
-        #     words = words + sent + ["\n"]
-        # words = words[:-1]
         words = text.split()
         for word in words:
             new_line = ' '.join(line + [word])
@@ -83,10 +82,6 @@ class ImageText(object):
             text_height = size[1]
             if size[0] <= box_width:
                 line.append(word)
-            # elif word == "\n":
-                # lines.append(line)
-                # line = []
-            #    continue
             else:
                 lines.append(line)
                 line = [word]
